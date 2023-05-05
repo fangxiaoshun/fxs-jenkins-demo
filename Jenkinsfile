@@ -15,7 +15,8 @@ pipeline {
        steps{
            sh "java -version"
            sh "git --version"
-           sh "mvn -version"
+           sh 'mvn -v'
+
        }
     }
      stage('代码开始') {
