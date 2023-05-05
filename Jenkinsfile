@@ -9,6 +9,7 @@ pipeline {
         // 步骤
         steps{
             echo "开始"
+            sh "java -version"
         }
      }
      stage('代码编译') {
