@@ -5,6 +5,12 @@ pipeline {
   // 阶段集合
    stages {
     stage('环境检查阶段') {
+        agent {
+            docker {
+                image 'maven:3-alpine'
+                // args '-v /root/.m2:/root/.m2'
+            }
+        }
        // 步骤
        steps{
            sh "java -version"
