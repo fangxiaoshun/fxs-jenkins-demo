@@ -2,7 +2,7 @@
 pipeline {
    agent any
 
-   # 阶段集合
+  // 阶段集合
    stages {
      // 阶段1
      stage('代码开始') {
